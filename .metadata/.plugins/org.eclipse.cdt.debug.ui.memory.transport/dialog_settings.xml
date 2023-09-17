@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="EXPORT_DIALOG">
+		<item key="Start" value="0x080003ae"/>
+		<item key="End" value="0x080003b0"/>
+		<item key="Initial address" value="0x80003ae"/>
+		<item key="File" value="/home/mohamed/Downloads/Untitled"/>
+		<item key="SELECTED_EXPORTER" value="PlainTextExporter"/>
+	</section>
+</section>

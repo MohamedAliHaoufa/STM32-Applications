@@ -1,0 +1,15 @@
+/*
+ * GPIO.h
+ *
+ *  Created on: Sep 16, 2023
+ *      Author: mohamed
+ */
+
+#ifndef GPIO_H_
+#define GPIO_H_
+
+extern volatile RCC_AHB1ENR_Register static *const RCC_Port_AHB1ClockEnable_Registers[Port_Indices];
+extern
+
+
+#endif /* GPIO_H_ */
