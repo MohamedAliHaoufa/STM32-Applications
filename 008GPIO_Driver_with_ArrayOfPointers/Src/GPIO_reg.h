@@ -8,11 +8,8 @@
 #ifndef GPIO_REG_H_
 #define GPIO_REG_H_
 
-#include <stdint.h>
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+#include "std_libraries.h"
+#include "mcal_std_types.h"
 
 /**************************************************************************************
  **************************** Base Addresses ******************************************

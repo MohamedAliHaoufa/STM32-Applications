@@ -94,3 +94,120 @@ volatile RCC_CR_Register *const RCC_Port_ClockControl_Register[Port_Indices]={
 volatile RCC_CFGR_Register *const RCC_Port_ClockConfig_Register[Port_Indices]={
 		RCC_ClockConfig
 };
+
+
+/**************************************************************************************
+ * GPIO APIs
+ */
+
+/**
+ * @brief 
+ * 
+ * @param 
+ * @param 
+ */
+uint8_t GPIO_ReadFromInputPin(GPIO_PortNumIndexArr_t PortNum, GPIO_ConfigurePinNum_t PinNum) // return the content of input data regiser
+{
+    //read the corresponding bit position of that pin in the input data register
+    uint8_t value;
+
+    //the IDR value shifted by the amount of PinNumber to get that bit position to LSB position of the IDR register
+    value = (uint8_t) (( GPIO_IDRControl_Registers[PortNum]->Register >> PinNum) & 0x00000001 );
+
+    return value; // 0 or 1
+}
+
+/**
+ * @brief 
+ * 
+ * @param 
+ * @param 
+ */
+uint16_t GPIO_ReadFromInputPort(GPIO_PortNumIndexArr_t PortNum, GPIO_ConfigurePinNum_t PinNum)
+{
+    uint16_t value;
+
+    value = (uint16_t) ( GPIO_IDRControl_Registers[PortNum]->Register >> PinNum);
+
+    return value;
+}
+
+/**
+ * @brief 
+ * 
+ * @param 
+ * @param 
+ */
+Std_ReturnType GPIO_ToggleOutputPin(GPIO_PortNumIndexArr_t PortNum, GPIO_ConfigurePinNum_t PinNum)
+{
+    Std_ReturnType ret = E_OK;
+    if((&GPIO_ODRControl_Registers[PortNum])!= NULL){
+    	GPIO_ODRControl_Registers[PortNum]->Register ^= (1 << PinNum) ;
+	}else{
+		ret = E_NOT_OK;
+	}
+    return ret;
+}
+
+
+/**
+ * @brief 
+ * 
+ * @param 
+ * @param 
+ */
+Std_ReturnType GPIO_ReadFromOutputPin(GPIO_PortNumIndexArr_t PortNum, GPIO_ConfigurePinNum_t PinNum, uint8_t value ) // value = set 1 or reset 0
+{
+    Std_ReturnType ret = E_OK;
+    switch(value){
+        case GPIO_PIN_SET:
+            GPIO_ODRControl_Registers[PortNum]->Register |= (1 << PinNum) ;
+            break;
+        case GPIO_PIN_RESET:
+            GPIO_ODRControl_Registers[PortNum]->Register &= ~(1 << PinNum) ;
+            break;
+        default: ret = E_NOT_OK;
+            break;
+    }
+    return ret;
+} 
+
+/**
+ * @brief 
+ * 
+ * @param 
+ * @param 
+ */
+Std_ReturnType GPIO_ReadFromOutputPort(GPIO_PortNumIndexArr_t PortNum, uint16_t value)
+{
+    Std_ReturnType ret = E_OK;
+    if((&GPIO_ODRControl_Registers[PortNum])!= NULL){
+        GPIO_ODRControl_Registers[PortNum]->Register = value ; // writing to the whole port to the given GPIO
+    }else{
+    	ret = E_NOT_OK;
+    }
+    return ret;
+}
+
+
+/**
+ * @brief 
+ * 
+ * @param 
+ * @param 
+ */
+Std_ReturnType GPIO_PeripheralClockControl (GPIO_PortNumIndexArr_t PortNum, uint8_t EnorDi)
+{
+    Std_ReturnType ret = E_OK;
+    switch(EnorDi){
+        case ENABLE:
+            RCC_Port_AHB1ClockEnable_Registers[PortNum]->Register |= (1 << PortNum) ;
+            break;
+        case DISABLE:
+            RCC_Port_AHB1ClockEnable_Registers[PortNum]->Register &= ~(1 << PortNum) ;
+            break;
+        default: ret = E_NOT_OK;
+            break;
+    }
+    return ret;
+}
