@@ -61,7 +61,7 @@ int main(void)
 	//1. Configure the RCC_CFGR MCO1 bit fields to select HSE as a clock source
 	*pRccCfgrReg |=  (0x02<<21); // clear 21 and set 22 bit
 
-	// choose the value of the MCO1 prescaler divide 8MHZ of HSI by/4 = expect 2MHZ
+	// choose the value of the MCO1 prescaler divide 8MHZ of HSE by/4 = expect 2MHZ
 	*pRccCfgrReg &= ~ (1<<24);
 	*pRccCfgrReg |= (1<<25);
 	*pRccCfgrReg |= (1<<26);
