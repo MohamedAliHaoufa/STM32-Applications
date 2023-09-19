@@ -14,7 +14,7 @@
 #define LOW          0 
 #define Btn_pressed  LOW
 
-static void delay (void)
+void delay (void)
 {
 
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
