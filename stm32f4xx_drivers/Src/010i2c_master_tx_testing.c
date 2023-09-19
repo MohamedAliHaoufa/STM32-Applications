@@ -20,7 +20,7 @@ void I2C1_GPIOInits(void);
 void I2C1_Inits (void);
 void GPIO_ButtonInit(void);
 
-void delay (void)
+static void delay (void)
 {
     // this will introduce ~200ms  delay when SYSCLK is 16MHZ (RC internal for example)
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
