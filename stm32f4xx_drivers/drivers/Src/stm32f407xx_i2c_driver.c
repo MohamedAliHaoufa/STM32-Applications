@@ -1,6 +1,6 @@
 /**
  * @file stm32f407xx_i2c_driver.c
- * @author your name (you@domain.com)
+ * @author Mohamed Ali Haoufa
  * @brief This file contains the implementation of the I2C driver APIs.
  * @version 0.1
  * @date 2023-08-10
