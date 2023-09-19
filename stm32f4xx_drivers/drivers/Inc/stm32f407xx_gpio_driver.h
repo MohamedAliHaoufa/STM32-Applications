@@ -4,7 +4,7 @@
  * @version 0.1
  * @date 2023-08-10
  * 
- * @author Your Name
+ * @author Mohamed Ali Haoufa
  * @email you@domain.com
  * @copyright Copyright (c) 2023
  * 
