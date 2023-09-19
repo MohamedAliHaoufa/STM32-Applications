@@ -14,7 +14,7 @@
 #define LOW          0 
 #define Btn_pressed  LOW
 
-void delay (void)
+static void delay (void)
 {
 
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
@@ -29,7 +29,7 @@ int main(void)
 
     Gpioled.pGPIOx=GPIOA; //GPIO base address
 
-    Gpioled.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_8; // wa can't use the debugging pins (p269 in RF_M) as GPIO 
+    Gpioled.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_8; // wa can't use the debugging pins (p269 in RF_M) as GPIO
     Gpioled.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_OUT;
     Gpioled.GPIO_PinConfig.GPIO_PinPinOPType = GPIO_OP_TYPE_PP;
     Gpioled.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
@@ -64,5 +64,6 @@ int main(void)
       }
         return 0;
     }
+
 
 		
