@@ -1,5 +1,6 @@
 /**
  * @file stm32f407xx_i2c_driver.h
+ * @author Mohamed Ali Haoufa
  * @brief This file contains definitions and functions prototypes for the STM32F407xx I2C driver.
  * @version 0.1
  * @date 2023-08-10
