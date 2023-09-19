@@ -1,0 +1,7 @@
+GPIO.c:27:6:delay	2
+GPIO.c:109:9:GPIO_ReadFromInputPin	1
+GPIO.c:126:10:GPIO_ReadFromInputPort	1
+GPIO.c:141:16:GPIO_ToggleOutputPin	1
+GPIO.c:159:16:GPIO_ReadFromOutputPin	3
+GPIO.c:181:16:GPIO_ReadFromOutputPort	1
+GPIO.c:199:16:GPIO_PeripheralClockControl	3

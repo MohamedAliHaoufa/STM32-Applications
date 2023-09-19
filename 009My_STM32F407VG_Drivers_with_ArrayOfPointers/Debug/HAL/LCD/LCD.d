@@ -1,0 +1,1 @@
+HAL/LCD/LCD.o: ../HAL/LCD/LCD.c

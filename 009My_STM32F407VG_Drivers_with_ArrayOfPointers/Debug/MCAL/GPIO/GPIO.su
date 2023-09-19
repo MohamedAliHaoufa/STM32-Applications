@@ -1,0 +1,7 @@
+../MCAL/GPIO/GPIO.c:27:6:delay	16	static
+../MCAL/GPIO/GPIO.c:109:9:GPIO_ReadFromInputPin	24	static
+../MCAL/GPIO/GPIO.c:126:10:GPIO_ReadFromInputPort	24	static
+../MCAL/GPIO/GPIO.c:141:16:GPIO_ToggleOutputPin	24	static
+../MCAL/GPIO/GPIO.c:159:16:GPIO_ReadFromOutputPin	24	static
+../MCAL/GPIO/GPIO.c:181:16:GPIO_ReadFromOutputPort	24	static
+../MCAL/GPIO/GPIO.c:199:16:GPIO_PeripheralClockControl	24	static
