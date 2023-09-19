@@ -1,6 +1,6 @@
 /**
  * @file stm32f407xx_gpio_driver.c
- * @author your name (you@domain.com)
+ * @author Mohamed Ali Haoufa
  * @brief This file contains the GPIO driver implementation
  * @version 0.1
  * @date 2023-08-10
