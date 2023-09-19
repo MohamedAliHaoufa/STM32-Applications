@@ -19,7 +19,7 @@
 
 void EXTI9_5_IRQHandler(void); // !! prototype maybe not nedded since NVIC table maybe prototyped the func somewhere else and call this one since the other one is weak in the start up file  
  
-static void delay (void)
+void delay (void)
 {
     // this will introduce ~200ms  delay when SYSCLK is 16MHZ (RC internal for example) 
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
