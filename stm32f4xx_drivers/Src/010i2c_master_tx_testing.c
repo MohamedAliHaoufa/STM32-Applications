@@ -1,6 +1,6 @@
 /**
  * @file 010i2c_master_tx_testing.c
- * @author your name (you@domain.com)
+ * @author Mohamed Ali Haoufa
  * @brief 
  * @version 0.1
  * @date 2023-08-10
