@@ -18,7 +18,7 @@
 //extern void initialise_monitor_handles();
 
 // a Global Flag variable
-static uint8_t rxComplt = RESET;
+uint8_t rxComplt = RESET;
 
 void I2C1_EV_IRQHandler(void); // !! prototype maybe not nedded since NVIC table maybe prototyped the func somewhere else and call this one since the other one is weak in the start up file
 void I2C1_ER_IRQHandler(void); // !! prototype maybe not nedded since NVIC table maybe prototyped the func somewhere else and call this one since the other one is weak in the start up file
@@ -30,17 +30,17 @@ void I2C1_GPIOInits(void);
 void I2C1_Inits (void);
 void GPIO_ButtonInit(void);
 
-static void delay (void)
+void delay (void)
 {
     // this will introduce ~200ms  delay when SYSCLK is 16MHZ (RC internal for example)
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
 
 }
 
-static I2C_Handle_t I2C1Handle; // global variable
+I2C_Handle_t I2C1Handle; // global variable
 
 // rcv buffer
-static uint8_t rcv_buf[32]; // the size of the received data is 32 bytes
+uint8_t rcv_buf[32]; // the size of the received data is 32 bytes
 
 /*
  * PB6 -> SCL
