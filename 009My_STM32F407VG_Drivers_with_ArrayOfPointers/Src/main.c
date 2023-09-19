@@ -57,7 +57,7 @@ int main(void)
 		}
 
 		for(i=0;i<4;i++){
-		portDODRControlRegister->Register= 0x0;
+		portDODRControlRegister->Register &= 0x0;
 		delay();
 		GPIO_ToggleOutputPin(PortD, 12);
 		GPIO_ToggleOutputPin(PortD, 13);
