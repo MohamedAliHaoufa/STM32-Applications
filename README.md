@@ -1,5 +1,4 @@
 # STM32-Applications
-# Repository: .metadata
 
 This repository contains a collection of STM32 applications developed by Mohamed Ali Haoufa. These applications demonstrate various functionalities and features of STM32 microcontrollers. Each application is designed to showcase specific aspects of embedded systems programming using STM32 devices.
 
