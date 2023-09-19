@@ -1,7 +1,7 @@
 /**
  * 
  * @file 002led_Button.c
- * @author your name (you@domain.com)
+ * @author Mohamed Ali Haoufa
  * @brief 
  * @version 0.1
  * @date 2023-08-10
@@ -42,7 +42,7 @@ int main(void)
 
     GPIOBtn.pGPIOx=GPIOA; //GPIO base address
 
-    GPIOBtn.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_0;
+    GPIOBtn.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_8;
     GPIOBtn.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_IN;
     GPIOBtn.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
     GPIOBtn.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD; //there is a pull down available in the shematic of the Button
