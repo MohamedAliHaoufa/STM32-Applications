@@ -1,6 +1,6 @@
 /**
  * @file stm32f407xx.h
- * @author Your Name
+ * @author Mohamed Ali Haoufa
  * @brief Header file containing all the necessary information about the STM32F407xx MCU.
  * @version 0.1
  * @date 2023-08-10
