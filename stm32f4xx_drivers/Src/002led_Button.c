@@ -14,7 +14,7 @@
 #define HIGH         1
 #define Btn_pressed  HIGH
 
-static void delay (void)
+void delay (void)
 {
 
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
