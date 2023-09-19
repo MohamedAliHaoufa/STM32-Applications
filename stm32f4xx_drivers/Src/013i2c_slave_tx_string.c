@@ -24,17 +24,17 @@ void I2C1_GPIOInits(void);
 void I2C1_Inits (void);
 void GPIO_ButtonInit(void);
 
-void delay (void)
+static void delay (void)
 {
     // this will introduce ~200ms  delay when SYSCLK is 16MHZ (RC internal for example)
     for( uint32_t i = 0 ; i < 500000/2 ; i++);
 
 }
 
-I2C_Handle_t I2C1Handle; // global variable
+static I2C_Handle_t I2C1Handle; // global variable
 
 // Tx buffer
-uint8_t Tx_buf[32]= " STM32 slave mode testing... ";  /*  arduino sketch written by the wire library
+static uint8_t Tx_buf[32]= " STM32 slave mode testing... ";  /*  arduino sketch written by the wire library
 		                                                             which has limitaion transfered or received in
 		                                                             single transaction and the limit is 32bytes   */
 /*
