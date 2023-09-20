@@ -1,0 +1,8 @@
+"./APP/main.o"
+"./APP/syscalls.o"
+"./APP/sysmem.o"
+"./HAL/Keypad/Keypad.o"
+"./HAL/LCD/LCD.o"
+"./HAL/S7_Segment/S7_Segment.o"
+"./MCAL/GPIO/GPIO.o"
+"./Startup/startup_stm32f407vgtx.o"
