@@ -22,6 +22,8 @@ This repository contains a collection of STM32 applications developed by Mohamed
 
 - **009My_STM32F407VG_Drivers_with_ArrayOfPointers:** An updated version of the GPIO driver with additional features.
 
+- **010Drivers_ArrayOfPointers:** An updated version of the GPIO & I2C drivers with additional features.
+  
 - **STM32F401VE_Drivers:** A collection of STM32F401VE drivers developed by Mohamed Ali Haoufa for various peripherals [GPIO, SPI, I2C, UART, CAN... etc.].
 
 - **STM32F407VG_Drivers:** A collection of STM32F407VG drivers developed by Mohamed Ali Haoufa for various peripherals [GPIO, SPI, I2C, UART, CAN... etc.].
