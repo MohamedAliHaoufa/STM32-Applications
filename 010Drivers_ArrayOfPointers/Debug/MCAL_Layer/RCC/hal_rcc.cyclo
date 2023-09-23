@@ -1,0 +1,13 @@
+hal_rcc.c:22:16:GPIO_PeripheralClockControl	3
+hal_rcc.c:38:16:I2C_PeripheralClockControl	3
+hal_rcc.c:54:16:SPI_PeripheralClockControl	3
+hal_rcc.c:70:16:UART_PeripheralClockControl	3
+hal_rcc.c:86:16:USART_PeripheralClockControl	3
+hal_rcc.c:102:16:DMA_PeripheralClockControl	3
+hal_rcc.c:118:16:TIM_PeripheralClockControl	3
+hal_rcc.c:134:16:RTC_PeripheralClockControl	3
+hal_rcc.c:150:16:CAN_PeripheralClockControl	3
+hal_rcc.c:166:16:Ethernet_PeripheralClockControl	3
+hal_rcc.c:182:16:ADC_PeripheralClockControl	3
+hal_rcc.c:198:16:DAC_PeripheralClockControl	3
+hal_rcc.c:214:16:I2S_PeripheralClockControl	3
