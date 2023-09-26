@@ -1,0 +1,13 @@
+hal_gpio.c:47:16:EXTI_EnableDisableInterrupt	4
+hal_gpio.c:72:6:Delay	2
+hal_gpio.c:80:6:Delay_Btn	2
+hal_gpio.c:97:16:GPIO_InitPin	16
+hal_gpio.c:217:9:GPIO_ReadInputPin	1
+hal_gpio.c:230:10:GPIO_ReadInputPort	1
+hal_gpio.c:243:16:GPIO_SetResetOutputPin	3
+hal_gpio.c:266:16:GPIO_ToggleOutputPin	1
+hal_gpio.c:284:16:GPIO_WriteOutputPin	3
+hal_gpio.c:307:16:GPIO_WriteOutputPort	1
+hal_gpio.c:324:16:GPIO_IRQConfig	13
+hal_gpio.c:353:16:GPIO_IRQPriorityConfig	1
+hal_gpio.c:368:16:GPIO_IRQHandling	2
