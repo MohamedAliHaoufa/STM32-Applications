@@ -1,0 +1,134 @@
+/*
+ * hal_rcc_cfg.h
+ *
+ *  Created on: Sep 19, 2023
+ *      Author: mohamed
+ */
+
+#ifndef HAL_RCC_CFG_H_
+#define HAL_RCC_CFG_H_
+#include "../mcal_stm32f407xx.h"
+
+/**************************************************************************************
+ **************************** Bit position Macros Definition ***************************************
+ **************************************************************************************/
+
+/****************************************************************************************
+ * RCC peripheral enable registers
+ */
+
+#define RCC_AHB1ENR_CRCEN
+#define RCC_AHB1ENR_BKPSRAMEN
+#define RCC_AHB1ENR_CCMDATARAMEN
+#define RCC_AHB1ENR_DMA1EN
+#define RCC_AHB1ENR_DMA2EN
+#define RCC_AHB1ENR_ETHMACEN
+#define RCC_AHB1ENR_ETHMACTXEN
+#define RCC_AHB1ENR_ETHMACRXEN
+#define RCC_AHB1ENR_ETHMACPTPEN
+#define RCC_AHB1ENR_OTGHSEN
+#define RCC_AHB1ENR_OTGHSULPIEN
+
+#define RCC_AHB2ENR_DCMIEN
+#define RCC_AHB2ENR_CRYPEN
+#define RCC_AHB2ENR_HASHEN
+#define RCC_AHB2ENR_RNGEN
+#define RCC_AHB2ENR_OTGFSEN
+
+#define RCC_AHB3ENR_FSMCEN
+
+#define RCC_APB1ENR_TIM2EN
+#define RCC_APB1ENR_TIM3EN
+#define RCC_APB1ENR_TIM4EN
+#define RCC_APB1ENR_TIM5EN
+#define RCC_APB1ENR_TIM6EN
+#define RCC_APB1ENR_TIM7EN
+#define RCC_APB1ENR_TIM12EN
+#define RCC_APB1ENR_TIM13EN
+#define RCC_APB1ENR_TIM14EN
+#define RCC_APB1ENR_WWDGEN
+#define RCC_APB1ENR_SPI2EN
+#define RCC_APB1ENR_SPI3EN
+#define RCC_APB1ENR_USART2EN
+#define RCC_APB1ENR_USART3EN
+#define RCC_APB1ENR_UART4EN
+#define RCC_APB1ENR_UART5EN
+#define RCC_APB1ENR_I2C1EN
+#define RCC_APB1ENR_I2C2EN
+#define RCC_APB1ENR_I2C3EN
+#define RCC_APB1ENR_CAN1EN
+#define RCC_APB1ENR_CAN2EN
+#define RCC_APB1ENR_PWREN
+#define RCC_APB1ENR_DACEN
+
+#define RCC_APB2ENR_TIM1EN
+#define RCC_APB2ENR_TIM8EN
+#define RCC_APB2ENR_USART1EN
+#define RCC_APB2ENR_USART6EN
+#define RCC_APB2ENR_ADC1EN
+#define RCC_APB2ENR_ADC2EN
+#define RCC_APB2ENR_ADC3EN
+#define RCC_APB2ENR_SDIOEN
+#define RCC_APB2ENR_SPI1EN
+#define RCC_APB2ENR_SYSCFGEN	14
+#define RCC_APB2ENR_TIM9EN
+#define RCC_APB2ENR_TIM10EN
+#define RCC_APB2ENR_TIM11EN
+
+/****************************************************************************************
+ * RCC peripheral reset registers Macros
+ */
+#define RCC_AHB1RSTR_CRCRST
+#define RCC_AHB1RSTR_DMA1RST
+#define RCC_AHB1RSTR_DMA2RST
+#define RCC_AHB1RSTR_ETHMACRST
+#define RCC_AHB1RSTR_OTGHSRST
+
+#define RCC_AHB2RSTR_DCMIRST
+#define RCC_AHB2RSTR_CRYPRST
+#define RCC_AHB2RSTR_HASHRST
+#define RCC_AHB2RSTR_RNGRST
+#define RCC_AHB2RSTR_OTGFSRST
+
+#define RCC_AHB3RSTR_FSMCRST
+
+#define RCC_APB1RSTR_TIM2RST
+#define RCC_APB1RSTR_TIM3RST
+#define RCC_APB1RSTR_TIM4RST
+#define RCC_APB1RSTR_TIM5RST
+#define RCC_APB1RSTR_TIM6RST
+#define RCC_APB1RSTR_TIM7RST
+#define RCC_APB1RSTR_TIM12RST
+#define RCC_APB1RSTR_TIM13RST
+#define RCC_APB1RSTR_TIM14RST
+#define RCC_APB1RSTR_WWDGRST
+#define RCC_APB1RSTR_SPI2RST
+#define RCC_APB1RSTR_SPI3RST
+#define RCC_APB1RSTR_USART2RST
+#define RCC_APB1RSTR_USART3RST
+#define RCC_APB1RSTR_UART4RST
+#define RCC_APB1RSTR_UART5RST
+#define RCC_APB1RSTR_I2C1RST
+#define RCC_APB1RSTR_I2C2RST
+#define RCC_APB1RSTR_I2C3RST
+#define RCC_APB1RSTR_CAN1RST
+#define RCC_APB1RSTR_CAN2RST
+#define RCC_APB1RSTR_PWRRST
+#define RCC_APB1RSTR_DACRST
+
+#define RCC_APB2RSTR_TIM1RST
+#define RCC_APB2RSTR_TIM8RST
+#define RCC_APB2RSTR_USART1RST
+#define RCC_APB2RSTR_USART6RST
+#define RCC_APB2RSTR_ADCRST
+#define RCC_APB2RSTR_SDIORST
+#define RCC_APB2RSTR_SPI1RST
+#define RCC_APB2RSTR_SYSCFGRST
+#define RCC_APB2RSTR_TIM9RST
+#define RCC_APB2RSTR_TIM10RST
+#define RCC_APB2RSTR_TIM11RST
+
+
+
+
+#endif /* HAL_RCC_CFG_H_ */

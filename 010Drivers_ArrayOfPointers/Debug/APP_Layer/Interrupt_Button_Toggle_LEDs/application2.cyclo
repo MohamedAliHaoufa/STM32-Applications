@@ -1,0 +1,2 @@
+application2.c:30:5:main	3
+application2.c:89:6:EXTI0_IRQHandler	1
