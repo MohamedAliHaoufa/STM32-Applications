@@ -1,2 +1,0 @@
-../APP_Layer/Interrupt_Button_Toggle_LEDs/application2.c:30:5:main	96	static
-../APP_Layer/Interrupt_Button_Toggle_LEDs/application2.c:89:6:EXTI0_IRQHandler	8	static
