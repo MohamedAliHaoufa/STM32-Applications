@@ -26,8 +26,6 @@ This repository contains a collection of STM32 applications developed by Mohamed
   
 - **STM32F401VE_Drivers:** A collection of STM32F401VE drivers developed by Mohamed Ali Haoufa for various peripherals [GPIO, SPI, I2C, UART, CAN... etc.].
 
-- **STM32F407VG_Drivers:** A collection of STM32F407VG drivers developed by Mohamed Ali Haoufa for various peripherals [GPIO, SPI, I2C, UART, CAN... etc.].
-
 ## Usage:
 
 Feel free to explore and use these STM32 applications to learn more about embedded software development with STM32 microcontrollers. Each application includes detailed comments and explanations to assist in your learning journey.
